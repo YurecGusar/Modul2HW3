@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.Enums
 {
-    public enum Ingredients
+    public enum ThickenerType
     {
-        Sugar,
-        Salt,
-        Egs
+        Gelatin,
+        AgarAgar
     }
 }

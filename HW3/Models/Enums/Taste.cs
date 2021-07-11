@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.Enums
 {
-    public enum Ingredients
+    public enum Taste
     {
-        Sugar,
-        Salt,
-        Egs
+        Salty,
+        Sweet,
+        Sour,
+        Apple,
+        Pineapple
     }
 }

@@ -8,6 +8,6 @@ namespace HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes.C
 {
     public class FondantCandy
     {
-        public string Fondant { get; set; }
+        public Enums.FondantType FondantType { get; set; }
     }
 }

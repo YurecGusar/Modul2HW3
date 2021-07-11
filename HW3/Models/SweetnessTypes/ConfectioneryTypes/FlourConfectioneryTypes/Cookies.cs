@@ -8,6 +8,6 @@ namespace HW3.Models.SweetnessTypes.ConfectioneryTypes.FlourConfectioneryTypes
 {
     public class Cookies
     {
-        public string DoughType { get; set; }
+        public Enums.DoughType DoughType { get; set; }
     }
 }

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.Enums
 {
-    public enum Ingredients
+    public enum DoughType
     {
-        Sugar,
-        Salt,
-        Egs
+        Yeast,
+        Puff,
+        Shortcrust,
+        Biscuit
     }
 }

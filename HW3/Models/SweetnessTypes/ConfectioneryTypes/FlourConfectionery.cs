@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.SweetnessTypes.ConfectioneryTypes
 {
-    public class FlourConfectionery : Confectionery
+    public abstract class FlourConfectionery : Confectionery
     {
-        public string FlourType { get; set; }
+        public Enums.FlourType FlourType { get; set; }
     }
 }

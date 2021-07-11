@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.Enums
 {
-    public enum Ingredients
+    public enum CandyWrapper
     {
-        Sugar,
-        Salt,
-        Egs
+        Twisting,
+        Sachet,
+        Sock
     }
 }

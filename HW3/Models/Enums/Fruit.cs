@@ -3,6 +3,8 @@
     public enum Fruit
     {
         Apple,
-        Orange
+        Orange,
+        Plum,
+        Apricos
     }
 }

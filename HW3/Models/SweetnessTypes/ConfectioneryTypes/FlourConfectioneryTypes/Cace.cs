@@ -8,6 +8,6 @@ namespace HW3.Models.SweetnessTypes.ConfectioneryTypes.FlourConfectioneryTypes
 {
     public class Cace : FlourConfectionery
     {
-        public string Filling { get; set; }
+        public Enums.Taste Filling { get; set; }
     }
 }

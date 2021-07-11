@@ -1,7 +1,7 @@
 ﻿namespace HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes
 {
-    public class Candy : SugarConfectionery
+    public abstract class Candy : SugarConfectionery
     {
-        public string CandyWrapper { get; set; }
+        public Enums.CandyWrapper CandyWrapper { get; set; }
     }
 }

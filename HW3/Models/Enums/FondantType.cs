@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.Enums
 {
-    public enum Ingredients
+    public enum FondantType
     {
-        Sugar,
-        Salt,
-        Egs
+        Basic,
+        Fruit,
+        Milk,
+        Chocolate
     }
 }
