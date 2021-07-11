@@ -1,0 +1,16 @@
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\HW3.exe
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\HW3.deps.json
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\HW3.runtimeconfig.json
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\HW3.runtimeconfig.dev.json
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\HW3.dll
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\ref\HW3.dll
+E:\A-Level\YurecGusar\Modul2HW3\HW3\bin\Debug\net5.0\HW3.pdb
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.csproj.AssemblyReference.cache
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.GeneratedMSBuildEditorConfig.editorconfig
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.AssemblyInfoInputs.cache
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.AssemblyInfo.cs
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.csproj.CoreCompileInputs.cache
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.dll
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\ref\HW3.dll
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.pdb
+E:\A-Level\YurecGusar\Modul2HW3\HW3\obj\Debug\net5.0\HW3.genruntimeconfig.cache

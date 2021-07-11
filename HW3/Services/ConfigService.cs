@@ -51,7 +51,9 @@ namespace HW3.Services
                             WeightUnit = WeightUnit.KG,
                             RateDefaultToWeightUnit = 0.453592
                         }
-                    }
+                    },
+                    CurrentCurrency = Currency.USD,
+                    CurrentWeightUnit = WeightUnit.PNDS
                 }
             };
         }
