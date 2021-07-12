@@ -74,7 +74,7 @@ namespace HW3.Providers
             };
         }
 
-        public Candy[] GetCandys()
+        public Candy[] GetAll()
         {
             return _sweetness;
         }

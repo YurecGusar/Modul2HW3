@@ -7,14 +7,13 @@ namespace HW3
 {
     public class Starter
     {
-        private ConfigService _configService = ConfigService.Instance;
+        private PresentService _present = new PresentService();
         public void Run()
         {
-            Sweetness korowka = new CaramelCandy();
-            korowka.Name = "Korowka";
-            korowka.Currency = _configService.SetingConfig.CurrentCurrency;
-            korowka.Price = 24 * _configService.SetingConfig.CurrencyData[0].RateDefaultToCurrency;
-            Console.WriteLine($"{korowka.Name} {korowka.Currency} {korowka.Price}");
+            var present = _present.Present;
+            var presentWeight = _present.GetPresentWeight();
+            Console.WriteLine(presentWeight);
+            Console.WriteLine(present.Sweetnesses[1].Currency);
         }
     }
 }
