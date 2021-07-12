@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes.CandyTypes
 {
-    public class FondantCandy
+    public class FondantCandy : Candy
     {
         public Enums.FondantType FondantType { get; set; }
     }

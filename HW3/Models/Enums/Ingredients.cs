@@ -10,6 +10,13 @@ namespace HW3.Models.Enums
     {
         Sugar,
         Salt,
-        Egs
+        Egs,
+        Water,
+        Vinegar,
+        VegetableOil,
+        Honey,
+        CondensedMilk,
+        Milk,
+        Butter
     }
 }

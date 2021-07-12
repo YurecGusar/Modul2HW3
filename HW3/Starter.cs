@@ -1,5 +1,7 @@
 ﻿using System;
 using HW3.Services;
+using HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes.CandyTypes;
+using HW3.Models;
 
 namespace HW3
 {
@@ -8,10 +10,11 @@ namespace HW3
         private ConfigService _configService = ConfigService.Instance;
         public void Run()
         {
-            Console.WriteLine(_configService.SetingConfig.CurrencyData[1].RateDefaultToCurrency);
-            var x = 500;
-            var y = 50;
-            Console.WriteLine(Math.Round((double)(x * y / 100)));
+            Sweetness korowka = new CaramelCandy();
+            korowka.Name = "Korowka";
+            korowka.Currency = _configService.SetingConfig.CurrentCurrency;
+            korowka.Price = 24 * _configService.SetingConfig.CurrencyData[0].RateDefaultToCurrency;
+            Console.WriteLine($"{korowka.Name} {korowka.Currency} {korowka.Price}");
         }
     }
 }
