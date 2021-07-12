@@ -15,9 +15,11 @@ namespace HW3.Services
         {
             var config = GetConfig();
             SetingConfig = config.SetingConfig;
+            ErreySize = config.ErreySize;
         }
 
         public SetingConfig SetingConfig { get; }
+        public int ErreySize { get; }
         public static ConfigService Instance => _instance;
 
         private Config GetConfig()
@@ -53,8 +55,9 @@ namespace HW3.Services
                         }
                     },
                     CurrentCurrency = Currency.USD,
-                    CurrentWeightUnit = WeightUnit.PNDS
-                }
+                    CurrentWeightUnit = WeightUnit.PNDS,
+                },
+                ErreySize = 10
             };
         }
     }

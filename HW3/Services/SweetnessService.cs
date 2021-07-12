@@ -14,11 +14,13 @@ namespace HW3.Services
     {
         private ConfigService _config;
         private Providers.SweetnessProvider _sweetnessProvider;
+        private Candy[] _candys;
 
         public SweetnessService()
         {
             _config = ConfigService.Instance;
             _sweetnessProvider = new Providers.SweetnessProvider();
+            _candys = GetAll();
         }
 
         public Candy[] GetAll()
@@ -27,6 +29,19 @@ namespace HW3.Services
             ConvertCurrency(result);
             ConvertWeight(result);
             return result;
+        }
+
+        public Candy FindByName(string name)
+        {
+            foreach (var item in _candys)
+            {
+                if (item.Name == name)
+                {
+                    return item;
+                }
+            }
+
+            return null;
         }
 
         private void ConvertCurrency(Candy[] candy)

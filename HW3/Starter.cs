@@ -7,13 +7,21 @@ namespace HW3
 {
     public class Starter
     {
-        private PresentService _present = new PresentService();
+        private PresentService _present;
+        private SweetnessService _sweetnessService;
+
+        public Starter()
+        {
+            _present = PresentService.Instance;
+            _sweetnessService = new SweetnessService();
+        }
+
         public void Run()
         {
             var present = _present.Present;
-            var presentWeight = _present.GetPresentWeight();
-            Console.WriteLine(presentWeight);
-            Console.WriteLine(present.Sweetnesses[1].Currency);
+            _present.Add("Малибу");
+            _present.Add("Ключик");
+            Console.WriteLine(_present.GetTotalWeight());
         }
     }
 }
