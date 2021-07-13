@@ -1,6 +1,6 @@
-﻿using System;
-using HW3.Configs;
+﻿using HW3.Configs;
 using HW3.Models;
+using HW3.Models.Enums;
 
 namespace HW3.Services
 {
@@ -15,9 +15,11 @@ namespace HW3.Services
         {
             var config = GetConfig();
             SetingConfig = config.SetingConfig;
+            ErreySize = config.ErreySize;
         }
 
         public SetingConfig SetingConfig { get; }
+        public int ErreySize { get; }
         public static ConfigService Instance => _instance;
 
         private Config GetConfig()
@@ -51,8 +53,11 @@ namespace HW3.Services
                             WeightUnit = WeightUnit.KG,
                             RateDefaultToWeightUnit = 0.453592
                         }
-                    }
-                }
+                    },
+                    CurrentCurrency = Currency.USD,
+                    CurrentWeightUnit = WeightUnit.PNDS,
+                },
+                ErreySize = 10
             };
         }
     }

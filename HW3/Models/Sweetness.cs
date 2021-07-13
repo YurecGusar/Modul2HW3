@@ -1,4 +1,4 @@
-﻿using System;
+﻿using HW3.Models.Enums;
 
 namespace HW3.Models
 {

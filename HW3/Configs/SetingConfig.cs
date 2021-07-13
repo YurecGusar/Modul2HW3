@@ -1,5 +1,6 @@
 ﻿using System;
 using HW3.Models;
+using HW3.Models.Enums;
 
 namespace HW3.Configs
 {

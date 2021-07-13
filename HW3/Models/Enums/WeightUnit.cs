@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HW3.Models
+namespace HW3.Models.Enums
 {
     public enum WeightUnit
     {
