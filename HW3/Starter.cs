@@ -23,6 +23,7 @@ namespace HW3
             var present = _present.GetPresent();
             _present.Add(sweet[0]);
             _present.Add(sweet.FindBName("Ключик"));
+            var sweetInPresent = present.FindBName("Малибу");
             Console.WriteLine(_present.GetTotalWeight());
         }
     }

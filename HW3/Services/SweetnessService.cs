@@ -31,19 +31,6 @@ namespace HW3.Services
             return result;
         }
 
-        public Sweetness FindByName(string name)
-        {
-            foreach (var item in _candys)
-            {
-                if (item.Name == name)
-                {
-                    return item;
-                }
-            }
-
-            return null;
-        }
-
         private void ConvertCurrency(Sweetness[] candy)
         {
             foreach (var item in candy)
