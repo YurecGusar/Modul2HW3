@@ -9,7 +9,7 @@ namespace HW3.Services
         private ConfigService _config = ConfigService.Instance;
         private static readonly PresentService _instance = new PresentService();
         private int _counter;
-        private Candy[] _present;
+        private Sweetness[] _present;
 
         static PresentService()
         {
@@ -20,23 +20,20 @@ namespace HW3.Services
             Init();
             _sweetnessService = new SweetnessService();
             _counter = 0;
-            Present = _present;
         }
-
-        public Candy[] Present { get; }
 
         public static PresentService Instance => _instance;
 
-        public void Add(string name)
+        public void Add(Sweetness sweet)
         {
-            _present[_counter] = _sweetnessService.FindByName(name);
+            _present[_counter] = sweet;
             _counter++;
         }
 
         public double GetTotalWeight()
         {
             var weight = 0.0;
-            foreach (var item in Present)
+            foreach (var item in _present)
             {
                 if (item != null)
                 {
@@ -45,6 +42,11 @@ namespace HW3.Services
             }
 
             return weight;
+        }
+
+        public Sweetness[] GetPresent()
+        {
+            return _present;
         }
 
         private void Init()

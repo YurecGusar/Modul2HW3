@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HW3.Models;
 using HW3.Models.Enums;
 using HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes;
 using HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes.CandyTypes;
@@ -11,10 +12,10 @@ namespace HW3.Providers
 {
     public class SweetnessProvider
     {
-        private readonly Candy[] _sweetness;
+        private readonly Sweetness[] _sweetness;
         public SweetnessProvider()
         {
-            _sweetness = new Candy[]
+            _sweetness = new Sweetness[]
             {
                 new CaramelCandy
                 {
@@ -74,7 +75,7 @@ namespace HW3.Providers
             };
         }
 
-        public Candy[] GetAll()
+        public Sweetness[] GetAll()
         {
             return _sweetness;
         }

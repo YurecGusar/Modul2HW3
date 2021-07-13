@@ -14,7 +14,7 @@ namespace HW3.Services
     {
         private ConfigService _config;
         private Providers.SweetnessProvider _sweetnessProvider;
-        private Candy[] _candys;
+        private Sweetness[] _candys;
 
         public SweetnessService()
         {
@@ -23,7 +23,7 @@ namespace HW3.Services
             _candys = GetAll();
         }
 
-        public Candy[] GetAll()
+        public Sweetness[] GetAll()
         {
             var result = _sweetnessProvider.GetAll();
             ConvertCurrency(result);
@@ -31,7 +31,7 @@ namespace HW3.Services
             return result;
         }
 
-        public Candy FindByName(string name)
+        public Sweetness FindByName(string name)
         {
             foreach (var item in _candys)
             {
@@ -44,7 +44,7 @@ namespace HW3.Services
             return null;
         }
 
-        private void ConvertCurrency(Candy[] candy)
+        private void ConvertCurrency(Sweetness[] candy)
         {
             foreach (var item in candy)
             {
@@ -53,7 +53,7 @@ namespace HW3.Services
             }
         }
 
-        private void ConvertWeight(Candy[] candy)
+        private void ConvertWeight(Sweetness[] candy)
         {
             foreach (var item in candy)
             {

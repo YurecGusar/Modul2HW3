@@ -1,4 +1,5 @@
 ﻿using System;
+using HW3.Helpers;
 using HW3.Services;
 using HW3.Models.SweetnessTypes.ConfectioneryTypes.SugarConfectioneryTypes.CandyTypes;
 using HW3.Models;
@@ -18,9 +19,10 @@ namespace HW3
 
         public void Run()
         {
-            var present = _present.Present;
-            _present.Add("Малибу");
-            _present.Add("Ключик");
+            var sweet = _sweetnessService.GetAll();
+            var present = _present.GetPresent();
+            _present.Add(sweet[0]);
+            _present.Add(sweet.FindBName("Ключик"));
             Console.WriteLine(_present.GetTotalWeight());
         }
     }
